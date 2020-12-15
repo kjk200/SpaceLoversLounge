@@ -1,5 +1,19 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+# :alien: Space Lovers's Lounge :alien:
+
+### Space Lover's Lounge is a React app made with love :heart: for all our Space Lovers. To open the website in your browser click on this link : [spaceloverslounge.com](https://www.spaceloverslounge.com/)
+
+### Right now the app has three components : 
+#### -NASA APOD (Astronomy Picture of the Day)
+#### -Where is ISS (International Space Station) at this time alongwith some links to info on ISS 
+#### -Mars Pictures recently sent by Curiosity rover.
+
+### More features are intended for future. Suggestions are welcome :pray:.
+
+##### If you want to run this app locally on your machine you will have to install node modules in your project folder and some dependencies like react-responsive-carousal [link](https://www.npmjs.com/package/react-responsive-carousel)
+
+
 ## Available Scripts
 
 In the project directory, you can run:
