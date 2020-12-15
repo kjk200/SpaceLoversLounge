@@ -1,0 +1,430 @@
+/* Responsive Design Follows */
+
+/* Smartphones */
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  body {
+    width: 100%;
+  }
+  .navBar .navLinks a {
+    font-size: 16px;
+  }
+  img, iframe, object, embed, video {
+    width: 100%;
+    max-width: 100%;
+  }
+  .carousel .slide img {
+    height: 70% !important;
+  }
+}
+
+/* iPads (portrait and landscape) ----------- */
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  body {
+    width: 100%;
+  }
+  .navBar .navLinks a {
+    font-size: 28px;
+  }
+  img, iframe, object, embed, video {
+    width: 100%;
+    max-width: 100%;
+  }
+  .carousel .slide img {
+    height: 70% !important;
+  }
+  
+}
+
+/* Samsung Galaxy Fold ----------- */
+
+@media only screen and (min-device-width: 280px) and (max-device-width: 653px) {
+  body {
+    width: 100%;
+  }
+  .navBar .navLinks a {
+    font-size: 12px;
+  }
+  img, iframe, object, embed, video {
+    width: 100%;
+    max-width: 100%;
+  }
+  .carousel .slide img {
+    height: 70% !important;
+  }
+}
+
+/* iPhone X ----------- */
+
+@media only screen and (min-device-width: 375px) and (max-device-height: 812px) and (-webkit-device-pixel-ratio: 3) {
+  .navBar .navLinks a {
+    font-size: 16px;
+  }
+}
+
+
+
+
+/************* App CSS Follows ****************/
+
+.appDiv {
+  display: flex;
+  flex-direction: column;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+.headerBar {
+  background-image: url("./images/space-pic2.jpg");
+  background-size: cover;
+  height: 100px;
+  border-bottom: 1px solid rgb(221, 142, 241);
+  border-image: linear-gradient(to right, rgb(231, 182, 243), rgb(205, 72, 231), rgb(200, 248, 137));
+  border-image-slice: 1;
+}
+
+.logo {
+  color: white;
+  font-family: 'MuseoModerno';
+  font-size: 35px;
+  font-weight: 500;
+}
+
+.navBar {
+  height: 60px;
+  border-bottom: 1px solid rgb(221, 142, 241);
+  border-image: linear-gradient(to right, rgb(231, 182, 243), rgb(205, 72, 231), rgb(200, 248, 137));
+  border-image-slice: 1;
+}
+
+.navLinks {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  vertical-align: center;
+  height: 100%;
+}
+
+.navLinks {
+  color: white;
+  background-color: black;
+}
+
+.navLinks a {
+  text-decoration: none;
+  color: white;
+  font-size: 28px;
+  font-family: 'MuseoModerno';
+}
+
+.active {
+  color: rgb(231, 182, 243);
+  text-transform: uppercase;
+}
+
+.iconrocket {
+  display: none;
+}
+
+.active .iconrocket {
+  background-image: url("./images/animat-rocket2.png");
+  height: 40px;
+  width: 60px;
+  background-size: 60px;
+  color: rgb(231, 182, 243);
+  display: inline-block;
+}
+
+.home-display {
+  margin-top: 0;
+  padding-top: 30px;
+  min-height: 700px;
+  border-bottom: 1px solid rgb(221, 142, 241);
+  border-image: linear-gradient(to right, rgb(231, 182, 243), rgb(205, 72, 231), rgb(200, 248, 137));
+  border-image-slice: 1;
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+  
+}
+
+.apod-title {
+  height: 20%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  font-family: 'Oswald sans-serif';
+  font-weight: 500;
+  font-size: 25px;
+  color: white;
+}
+
+.apod-pic {
+  padding-top: 30px;
+  height: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  font-family: 'MuseoModerno';
+  font-weight: 700;
+  color: white;
+}
+
+.apod-descrip {
+  height: 30%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Reem Kufi', sans-serif;
+  margin: 0 auto;
+  color: white;
+}
+
+.desc-text {
+  width: 80%;
+  padding-top: 45px;
+  font-size: 20px;
+  padding-bottom: 30px;
+  color: #F8B5EE;
+}
+
+.footer {
+  height: 150px;
+  background-image: url("./images/space-pic2.jpg");
+  background-size: cover;
+  bottom: 0;
+  color: white;
+  position: relative;
+}
+
+.rocket-attri{
+  font-family: 'Dosis', sans-serif;
+  font-size: 13px;
+  position:absolute;
+  padding-top:120px;
+  left:10px;
+}
+
+.rocket-attri a{
+  color:white;
+}
+
+.copyright-state {
+  font-family: 'Dosis', sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  position: absolute;
+  bottom: 35px;
+  right: 35px;
+}
+
+.made-with-love {
+  font-family: 'Lobster Two', cursive;
+  font-weight: 500;
+  font-size: 20px;
+  position: absolute;
+  bottom: 60px;
+  right: 25px;
+}
+
+/* beating heart adapted from https://medium.com/@ebnsina/how-to-create-a-beating-heart-with-pure-css-for-your-valentine-da7085c8619a */
+
+.heart-beat {
+  animation: heartbeat 1s infinite;
+  background-color: red;
+  display: inline-block;
+  height: 14px;
+  width: 14px;
+  margin: 0 10px;
+  position: relative;
+  top: 0;
+  transform: rotate(-45deg);
+}
+
+.heart-beat:before, .heart-beat:after {
+  content: "";
+  background-color: red;
+  border-radius: 50%;
+  height: 14px;
+  position: absolute;
+  width: 14px;
+}
+
+.heart-beat:before {
+  top: -7px;
+  left: 0;
+}
+
+.heart-beat:after {
+  left: 7px;
+  top: 0;
+}
+
+@keyframes heartbeat {
+  0% {
+    transform: scale( 1) rotate(-45deg);
+  }
+  20% {
+    transform: scale( 1.25) rotate(-45deg);
+  }
+  40% {
+    transform: scale( 1.5) rotate(-45deg);
+  }
+}
+
+.iss-widget-display {
+  width: 100%;
+  background-color: black;
+  border-bottom: 1px solid rgb(221, 142, 241);
+  border-image: linear-gradient(to right, rgb(231, 182, 243), rgb(205, 72, 231), rgb(200, 248, 137));
+  border-image-slice: 1;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+}
+
+.widget-div {
+  height: 750px;
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+}
+
+.widget-frame {
+  padding-top: 60px;
+  padding-left: 60px;
+  height: 800px;
+  width: 800px;
+}
+
+.map-descrip {
+  padding-top: 60px;
+  margin-left: 50px;
+  padding-top: 60px;
+}
+
+.map-descrip ul {
+  height: 600px;
+  width: 500px;
+  font-family: 'Reem Kufi', sans-serif;
+  font-size: 20px;
+  color: #F8B5EE;
+}
+
+.map-descrip p {
+  font-family: 'Reem Kufi', sans-serif;
+  font-size: 20px;
+  color: #F8B5EE;
+  padding-left: 50px;
+}
+
+.map-descrip a {
+  font-family: 'Reem Kufi', sans-serif;
+  font-size: 20px;
+  color: #F8B5EE;
+}
+
+.links-wrapper-div {
+  height: 300px;
+  width: 100%;
+  display: flex;
+  margin-top: 100px;
+  justify-content: space-around;
+  margin-bottom: 30px;
+}
+
+.who-iss {
+  color: white;
+  height: 250px;
+  width: 350px;
+  font-family: 'Oswald sans-serif';
+  font-weight: 500;
+  font-size: 25px;
+  background-image: url("./images/peopleoniss.jpg");
+  background-size: cover;
+  display: block;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.who-iss span {
+  background-color: black;
+  width: 100%;
+}
+
+.astro-bios {
+  height: 250px;
+  width: 350px;
+  color: white;
+  font-family: 'Oswald sans-serif';
+  font-weight: 500;
+  font-size: 25px;
+  background-image: url("./images/astrocollage.jpg");
+  background-size: cover;
+  display: block;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.astro-bios span {
+  background-color: black;
+  width: 100%;
+}
+
+.iss-news {
+  color: white;
+  height: 250px;
+  width: 350px;
+  font-family: 'Oswald sans-serif';
+  font-weight: 500;
+  font-size: 25px;
+  background-image: url("./images//issnews.jpg");
+  background-size: cover;
+  display: block;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.iss-news span {
+  background-color: black;
+  width: 100%;
+}
+
+.display-photos {
+  width: 100%;
+  margin: auto;
+  padding-top: 50px;
+  background-color: black;
+}
+
+.carousel .slide img {
+  width: 80% !important;
+  border: 2px solid white !important;
+  height: 800px;
+}
+
+.display-photos .carousel .thumb {
+  border: 3px solid rgb(221, 142, 241);
+}
+
+.carousel .thumb.selected, .carousel .thumb:hover {
+  border: 3px solid white !important;
+}
+
+.mars-pic-descrip {
+  color: white;
+}
+
+.camera-name {
+  color: white;
+}
+
+.rover-name {
+  color: rgb(221, 142, 241);
+}

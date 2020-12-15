@@ -30,8 +30,8 @@ const App = () => {
         </div>
         <Switch>
           <Route exact path="/" component={Home}></Route>
-          <Route path="/iss" component={ISSLoc}></Route>
-          <Route path="/mars" component={Mars}></Route>
+          <Route exact path="/iss" component={ISSLoc}></Route>
+          <Route exact path="/mars" component={Mars}></Route>
         </Switch>
       </div>
       <Footer className="footerDiv" />
